@@ -1,0 +1,37 @@
+## Enable this to restrict editing to logged in users only
+
+## You should disable Indexes and MultiViews either here or in the
+## global config. Symlinks maybe needed for URL rewriting.
+Options -Indexes -MultiViews +FollowSymLinks
+
+## make sure nobody gets the htaccess files
+<Files ~ "^[\._]ht">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</Files>
+
+## Uncomment these rules if you want to have nice URLs using
+RewriteEngine on
+#
+## Not all installations will require the following line.  If you do, 
+## change "/orders" to the path to your orders directory relative
+## to your document root.
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond $1#%{REQUEST_URI} ([^#]*)#(.*)\1$
+RewriteRule ^(.*)$ %2index.php [QSA,L]
+
+#
+## If you enable DokuWikis XML-RPC interface, you should consider to
+## restrict access to it over HTTPS only! Uncomment the following two
+## rules if your server setup allows HTTPS.
+#RewriteCond %{HTTPS} !=on
+#
+RewriteRule ^$                        index.php  [L]
+RewriteCond %{REQUEST_FILENAME}       !-f
+RewriteCond %{REQUEST_FILENAME}       !-d
+RewriteRule (.*)                      index.php?page=$1  [QSA,L]
+RewriteRule ^index.php$               index.php

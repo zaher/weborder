@@ -1,0 +1,1 @@
+Any php file is addon

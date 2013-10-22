@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rtti version="1.0" author="MiniXML">
+  <Object Type="TEditorProject">
+    <Name>Orders</Name>
+    <Description>Sale Orders</Description>
+    <RootDir>W:\home\php\weborders</RootDir>
+    <Members>
+      <Items>
+      </Items>
+    </Members>
+    <RunMode>prunInternal</RunMode>
+    <Desktop>
+      <Files>
+        <CurrentFile>W:\home\php\weborders\exec\inc\show_items.php</CurrentFile>
+        <Items>
+          <Object Type="TEditorDesktopFile">
+            <FileName>W:\home\php\weborders\index.php</FileName>
+          </Object>
+          <Object Type="TEditorDesktopFile">
+            <FileName>W:\home\php\weborders\exec\item.php</FileName>
+            <CaretX>23</CaretX>
+            <CaretY>59</CaretY>
+            <TopLine>42</TopLine>
+          </Object>
+          <Object Type="TEditorDesktopFile">
+            <FileName>W:\home\php\weborders\exec\utils.php</FileName>
+            <CaretX>40</CaretX>
+            <CaretY>112</CaretY>
+            <TopLine>77</TopLine>
+          </Object>
+          <Object Type="TEditorDesktopFile">
+            <FileName>W:\home\php\weborders\exec\inc\cart_items.php</FileName>
+            <CaretX>47</CaretX>
+            <CaretY>57</CaretY>
+            <TopLine>39</TopLine>
+          </Object>
+          <Object Type="TEditorDesktopFile">
+            <FileName>W:\home\php\weborders\exec\inc\show_items.php</FileName>
+            <CaretX>35</CaretX>
+            <CaretY>31</CaretY>
+            <TopLine>14</TopLine>
+          </Object>
+        </Items>
+      </Files>
+      <Breakpoints>
+      </Breakpoints>
+      <Watches>
+        <Objects>
+          <Object Type="TdbgpWatch">
+            <VariableName>$ok</VariableName>
+          </Object>
+        </Objects>
+      </Watches>
+    </Desktop>
+  </Object>
+</rtti>
